@@ -36,7 +36,7 @@ class ViewController: UIViewController {
 
             // Business logic
             let utils = SillySongUtils()
-            let sillySong = utils.lyricsForName(lyricsTemplate: bananaFanaTemplate, fullName: "Talia")
+            let sillySong = utils.lyricsForName(lyricsTemplate: bananaFanaTemplate, fullName: nameField?.text ?? "")
             
             // display to UI
             lyricsView.text = sillySong
